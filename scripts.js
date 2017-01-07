@@ -78,5 +78,10 @@ var handlers = {
         todosList.changeTodo(changeTodoPositionInput.valueAsNumber, changeTodoTextInput.value);
         changeTodoPositionInput.value = '';
         changeTodoTextInput.value = '';
+    },
+    deleteTodo: function() {
+        var deleteTodoPositionInput = document.getElementById('deleteTodoPositionInput');
+        todosList.deleteTodo(deleteTodoPositionInput.valueAsNumber);
+        deleteTodoPositionInput.value = '';
     }
 };
