@@ -66,5 +66,17 @@ var handlers = {
     },
     toggleAll: function() {
         todosList.toggleAll();
+    },
+    addTodo: function() {
+        var addTodoTextTextInput = document.getElementById('addTodoText');
+        todosList.addTodo(addTodoTextTextInput.value);
+        addTodoTextTextInput.value = '';
+    },
+    changeTodo: function() {
+        var changeTodoPositionInput = document.getElementById('changeTodoPositionInput');
+        var changeTodoTextInput = document.getElementById('changeTodoTextInput');
+        todosList.changeTodo(changeTodoPositionInput.valueAsNumber, changeTodoTextInput.value);
+        changeTodoPositionInput.value = '';
+        changeTodoTextInput.value = '';
     }
 };

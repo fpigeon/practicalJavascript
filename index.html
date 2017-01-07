@@ -6,9 +6,19 @@
 </head>
 <body>
     <h1>TODO List</h1>
-    <button onclick="handlers.displayTodos()">Display Todos</button>
-    <br>
-    <button onclick="handlers.toggleAll()">Toggle All</button>
+    <div>
+        <button onclick="handlers.displayTodos()">Display Todos</button>
+        <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+    <div>
+        <input type="text" id="addTodoText">
+        <button onclick="handlers.addTodo()">Add Todo</button>
+    </div>
+    <div>
+        <input id="changeTodoPositionInput" type="number">
+        <input id="changeTodoTextInput" type="text">
+        <button onclick="handlers.changeTodo()">Change Todo</button>
+    </div>
     
     <script src="scripts.js"></script>
 </body>
