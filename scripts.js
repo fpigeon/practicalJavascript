@@ -60,8 +60,13 @@ var todosList = {
 
 };
 
-var displayTodosbtn = document.getElementById('displayTodosButton');
+var displayTodosBtn = document.getElementById('displayTodosButton');
+var toggleAllBtn = document.getElementById('toggleAllButton');
 
-displayTodosbtn.addEventListener('click', function(){
+displayTodosBtn.addEventListener('click', function(){
     todosList.displayTodos();
+});
+
+toggleAllBtn.addEventListener('click', function(){
+    todosList.toggleAll();
 });
