@@ -60,13 +60,11 @@ var todosList = {
 
 };
 
-var displayTodosBtn = document.getElementById('displayTodosButton');
-var toggleAllBtn = document.getElementById('toggleAllButton');
-
-displayTodosBtn.addEventListener('click', function(){
-    todosList.displayTodos();
-});
-
-toggleAllBtn.addEventListener('click', function(){
-    todosList.toggleAll();
-});
+var handlers = {
+    displayTodos: function() {
+        todosList.displayTodos();
+    },
+    toggleAll: function() {
+        todosList.toggleAll();
+    }
+};
