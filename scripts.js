@@ -90,3 +90,16 @@ var handlers = {
         todosList.toggleAll();
     }
 };
+
+var view = {
+    displayTodos: function() {
+        var todosUl = document.querySelector('ul');
+        todosUl.innerHTML = '';
+        for (var i = 0; i < todosList.todos.length; i++) {
+            var todoLi = document.createElement('li');
+            debugger;
+            todoLi.textContent = todosList.todos[i].todoText;
+            todosUl.appendChild(todoLi);
+        }
+    }
+};
